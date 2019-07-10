@@ -1,4 +1,6 @@
 package com.company;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class Main {
@@ -106,6 +108,25 @@ public class Main {
         Human human=new Human("Li",5,"China");
         human.say();
     }
+    public static void demoFunction(){
+        Random random=new Random();//伪随机，根据种子的变化而变化
+        System.out.println(random.nextInt(1000));
+        random.setSeed(1); //设置种子后，生成的数不变
+        System.out.println(random.nextInt(1000));
+        List<Integer> array=Arrays.asList(new Integer[]{1,2,3,4,5});
+        Collections.shuffle(array);
+        System.out.println(array.toString());
+        Date date=new Date();
+        System.out.println(date.toString());
+        System.out.println(date.getTime());
+        DateFormat df=new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
+        System.out.println(df.format(date));
+
+        System.out.println(UUID.randomUUID());
+
+        System.out.println(Math.ceil(2.2));
+        System.out.println(Math.floor(2.2));
+    }
     public static void main(String[] args) {
 	// write your code here
         System.out.println("基础知识测试：");
@@ -114,6 +135,7 @@ public class Main {
         //demoSet();
         //demoList();
         //demoException();
-        demoOOP();
+        //demoOOP();
+        demoFunction();
     }
 }
