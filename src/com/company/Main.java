@@ -127,6 +127,8 @@ public class Main {
         System.out.println(Math.ceil(2.2));
         System.out.println(Math.floor(2.2));
     }
+
+
     public static void main(String[] args) {
 	// write your code here
         System.out.println("基础知识测试：");
@@ -134,8 +136,8 @@ public class Main {
         //demoMapTable();
         //demoSet();
         //demoList();
-        //demoException();
+        demoException();
         //demoOOP();
-        demoFunction();
+        //demoFunction();
     }
 }
